@@ -10,10 +10,10 @@ const SmartFarmDashboard: React.FC = () => {
   const [sensorData, setSensorData] = useState<SensorData | null>(null);
   const [irrigationStatus, setIrrigationStatus] = useState<boolean>(false);
 
-  // Mock fetching sensor data
+
   useEffect(() => {
     const fetchSensorData = async () => {
-      // Replace this with your actual API call
+      
       const mockData: SensorData = {
         temperature: 26.5,
         humidity: 70,
@@ -23,13 +23,13 @@ const SmartFarmDashboard: React.FC = () => {
     };
 
     fetchSensorData();
-    const interval = setInterval(fetchSensorData, 5000); // Fetch data every 5 seconds
+    const interval = setInterval(fetchSensorData, 5000); 
     return () => clearInterval(interval);
   }, []);
 
   const toggleIrrigation = () => {
     setIrrigationStatus((prev) => !prev);
-    // Add API call to control the irrigation system
+    
     console.log("Irrigation toggled:", !irrigationStatus);
   };
 
@@ -50,7 +50,7 @@ const SmartFarmDashboard: React.FC = () => {
           marginTop: "20px",
         }}
       >
-        {/* Real-Time Sensor Data */}
+        
         <div style={{ border: "1px solid #ddd", padding: "15px" }}>
           <h2>Real-Time Sensor Data</h2>
           {sensorData ? (
@@ -64,7 +64,7 @@ const SmartFarmDashboard: React.FC = () => {
           )}
         </div>
 
-        {/* Irrigation System Control */}
+        
         <div style={{ border: "1px solid #ddd", padding: "15px" }}>
           <h2>Irrigation Control</h2>
           <p>Status: {irrigationStatus ? "ON" : "OFF"}</p>
@@ -82,7 +82,7 @@ const SmartFarmDashboard: React.FC = () => {
           </button>
         </div>
 
-        {/* Analytics Overview */}
+        
         <div style={{ border: "1px solid #ddd", padding: "15px" }}>
           <h2>Analytics</h2>
           <p>View detailed insights on crop performance, water usage, and more!</p>

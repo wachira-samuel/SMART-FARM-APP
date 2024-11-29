@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "data": {
+        "temperature": 23.5,
+        "humidity": 45.0,
+        "soilMoisture": 60.2,
+        "lightIntensity": 150
+      },
+      "timestamp": "2024-11-29T14:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "data": {
+        "temperature": 22.1,
+        "humidity": 47.8,
+        "soilMoisture": 55.0,
+        "lightIntensity": 145
+      },
+      "timestamp": "2024-11-29T14:10:00.000Z"
+    },
+    {
+      "id": 3,
+      "data": {
+        "temperature": 24.3,
+        "humidity": 42.5,
+        "soilMoisture": 59.3,
+        "lightIntensity": 160
+      },
+      "timestamp": "2024-11-29T14:20:00.000Z"
+    },
+    {
+      "id": 4,
+      "data": {
+        "temperature": 21.9,
+        "humidity": 48.0,
+        "soilMoisture": 63.5,
+        "lightIntensity": 155
+      },
+      "timestamp": "2024-11-29T14:30:00.000Z"
+    },
+    {
+      "id": 5,
+      "data": {
+        "temperature": 25.0,
+        "humidity": 41.2,
+        "soilMoisture": 61.0,
+        "lightIntensity": 165
+      },
+      "timestamp": "2024-11-29T14:40:00.000Z"
+    }
+  ]
+  

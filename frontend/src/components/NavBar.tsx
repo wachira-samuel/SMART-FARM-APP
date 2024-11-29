@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="bg-green-700 text-white p-4">
+    <nav className="bg-green-700">
       <ul className="flex space-x-4">
         <li>
           <Link href="/"className="hover:text-green-300">Home

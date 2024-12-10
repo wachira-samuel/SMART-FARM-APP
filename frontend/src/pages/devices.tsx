@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-
 interface Device {
   _id: string;
   deviceName: string;
@@ -10,14 +9,13 @@ interface Device {
 }
 
 const Devices = () => {
-  const [devices, setDevices] = useState<Device[]>([]); // Array of Device objects
-  const [loading, setLoading] = useState<boolean>(true); // Loading state
+  const [devices, setDevices] = useState<Device[]>([]); 
+  const [loading, setLoading] = useState<boolean>(true); 
 
-  // Fetch devices from backend API
   useEffect(() => {
     const fetchDevices = async () => {
       try {
-        const response = await axios.get<Device[]>('http://localhost:5000/devices'); // Type the response
+        const response = await axios.get<Device[]>('http://localhost:5000/devices'); 
         setDevices(response.data);
         setLoading(false);
       } catch (error) {

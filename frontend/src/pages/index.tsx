@@ -1,20 +1,18 @@
 import React from 'react';
 import Head from 'next/head';
 import NavBar from '../components/NavBar';
-import { useRouter } from 'next/router';  // Import useRouter for navigation
+import { useRouter } from 'next/router'; 
 import '../styles/globals.css';
 
 const HomePage: React.FC = () => {
-  const router = useRouter(); // Initialize the useRouter hook
+  const router = useRouter(); 
 
-  // Event handler to navigate to the registration page
   const handleRegister = () => {
-    router.push('/register'); // Replace with your actual registration path
+    router.push('/register'); 
   };
 
-  // Event handler to navigate to the login page
   const handleLogin = () => {
-    router.push('/login'); // Replace with your actual login path
+    router.push('/login'); 
   };
 
   return (
@@ -36,7 +34,7 @@ const HomePage: React.FC = () => {
           </p>
           <button
             className="mt-6 px-6 py-2 bg-white text-green-500 font-bold rounded hover:bg-green-100"
-            onClick={handleRegister} // Trigger handleRegister on click
+            onClick={handleRegister} 
           >
             Register
           </button>

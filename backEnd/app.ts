@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 app.use("/devices", deviceRoutes);
-app.use("/users", userRoutes); // LOGIN http:localhost: /users/login REGISTER /users/register
+app.use("/users", userRoutes);
 app.use("/data", dataRoutes);
 app.use(errorHandler);
 

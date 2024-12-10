@@ -1,4 +1,3 @@
-// src/components/DashboardContent.tsx
 import React, { useState, useEffect } from 'react';
 
 interface FarmData {
@@ -11,7 +10,6 @@ const DashboardContent: React.FC = () => {
   const [farmData, setFarmData] = useState<FarmData | null>(null);
 
   useEffect(() => {
-    // Mock API call to fetch farm data (can replace with actual API)
     const fetchFarmData = async () => {
       const data = await new Promise<FarmData>((resolve) =>
         setTimeout(() => {

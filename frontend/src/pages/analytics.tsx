@@ -44,7 +44,6 @@ const FarmOverview: React.FC = () => {
           <p className="text-xl text-gray-600">Monitor the performance of your farm and view important analytics.</p>
         </header>
 
-        {/* Analytics Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnalyticsCard 
             title="Temperature" 

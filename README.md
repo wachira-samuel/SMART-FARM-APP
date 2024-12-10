@@ -16,8 +16,8 @@ SmartFarm is an IoT-based system that enables farmers to monitor their fields an
 
 ## Technologies used are:
 
-## Frontend:Next.JS and Typescript for the web dashboard.
+## Frontend: Next.JS with Typescript for the web dashboard.
 
-## Backend: Node.js with Express.js to handle dummy data.
+## Backend: Node and Express.js  with Typescript to handle dummy data.
 
 ## Database: Prisma ORM in PostgreSQL for time-series data storage and analysis.

@@ -12,17 +12,17 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<any>(null);
 
   const register = async (email: string, password: string, confirmPassword: string) => {
-    // registration logic
+    
     console.log("Registering:", email);
   };
 
   const login = async (email: string, password: string) => {
-    // login logic
+    
     console.log("Logging in:", email);
   };
 
   const logout = () => {
-    // logout logic
+    
     setUser(null);
   };
 
